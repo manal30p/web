@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Pizza Pie</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#services">Service</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="order-form">
+        <h2>Complete Your Order</h2>
+        <form id="order-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <div>
+                <label>Total Price:</label>
+                <span id="total-price"></span>
+            </div>
+            
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <script src="order.js"></script>
+</body>
+</html>
